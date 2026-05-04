@@ -51,25 +51,25 @@
 
         <form id="contactForm" novalidate>
 
-            <div class="form-group">
+            <div>
                 <label>Imię:</label>
                 <input type="text" id="name">
                 <small class="error"></small>
             </div>
 
-            <div class="form-group">
+            <div>
                 <label>Nazwisko:</label>
                 <input type="text" id="surname">
                 <small class="error"></small>
             </div>
 
-            <div class="form-group">
+            <div>
                 <label>Email:</label>
                 <input type="text" id="email">
                 <small class="error"></small>
             </div>
 
-            <div class="form-group">
+            <div>
                 <label>Wiadomość:</label>
                 <textarea id="message"></textarea>
                 <small class="error"></small>
@@ -89,6 +89,11 @@
 
         <section>
             <h2>Projekty</h2>
+
+            <input type="text" id="projectName" placeholder="Nazwa projektu">
+            <input type="text" id="projectDesc" placeholder="Opis projektu">
+            <button id="addProjectBtn">Dodaj projekt</button>
+
             <ul id="projectsList"></ul>
         </section>
 
@@ -99,9 +104,7 @@
             <article>
                 <h3>Projekt własny – Aplikacja webowa CRUD</h3>
                 <p><strong>Okres:</strong> 2025</p>
-                <p>
-                    Aplikacja CRUD w Java Spring Boot + MySQL.
-                </p>
+                <p>Aplikacja CRUD w Java Spring Boot + MySQL.</p>
             </article>
         </section>
 
