@@ -1,0 +1,14 @@
+{
+  "skills": ["HTML", "CSS", "JavaScript", "Git"],
+
+  "projects": [
+    {
+      "name": "CV Website",
+      "description": "Strona CV z motywami"
+    },
+    {
+      "name": "Form Validation",
+      "description": "Walidacja formularza JS"
+    }
+  ]
+}

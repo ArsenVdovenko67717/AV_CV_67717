@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Arsen Vdovenko 67717 - CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="themeStylesheet" rel="stylesheet" href="red.css">
+</head>
+
+<body>
+
+<header class="container">
+    <button id="themeBtn">Zmień motyw</button>
+
+    <div class="left-column">
+        <img src="profil.jpg" alt="Zdjęcie profilowe">
+    </div>
+
+    <div class="right-column">
+        <p class="cv-label">CV</p>
+        <h1>Arsen Vdovenko</h1>
+        <p>
+            Ambitny student informatyki z pasją do tworzenia stron internetowych i nowoczesnych technologii.
+        </p>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- LEFT -->
+    <div class="left-column">
+
+        <section>
+            <h2>Kontakt</h2>
+            <p>E-mail:<br>
+                <a href="mailto:arsenvdovenko00@gmail.com">arsenvdovenko00@gmail.com</a>
+            </p>
+            <p>Telefon:<br>
+                <a href="tel:+48660993298">+48 660 993 298</a>
+            </p>
+            <p>Miasto:<br>Warszawa</p>
+        </section>
+
+        <!-- ✅ DYNAMIC SKILLS -->
+        <section>
+            <h2>Umiejętności</h2>
+            <ul id="skillsList"></ul>
+        </section>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-column">
+
+        <!-- FORM -->
+        <form id="contactForm" novalidate>
+
+            <div class="form-group">
+                <label>Imię:</label>
+                <input type="text" id="name">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Nazwisko:</label>
+                <input type="text" id="surname">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="text" id="email">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Wiadomość:</label>
+                <textarea id="message"></textarea>
+                <small class="error"></small>
+            </div>
+
+            <button type="submit">Wyślij</button>
+
+        </form>
+
+        <section>
+            <h2>O mnie</h2>
+            <p>
+                Jestem ambitnym studentem informatyki, systematycznie rozwijającym swoje kompetencje programistyczne.
+                Interesuję się tworzeniem aplikacji webowych oraz nowoczesnymi technologiami.
+            </p>
+        </section>
+
+        <!-- ✅ DYNAMIC PROJECTS -->
+        <section>
+            <h2>Projekty</h2>
+            <ul id="projectsList"></ul>
+        </section>
+
+        <button id="toggleExp">Pokaż/Ukryj doświadczenie</button>
+
+        <section id="experience">
+            <h2>Doświadczenie</h2>
+            <article>
+                <h3>Projekt własny – Aplikacja webowa CRUD</h3>
+                <p><strong>Okres:</strong> 2025</p>
+                <p>
+                    Aplikacja CRUD w Java Spring Boot + MySQL.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Edukacja</h2>
+            <p><strong>Uczelnia:</strong> Akademia Finansów i Biznesu Vistula</p>
+            <p><strong>Kierunek:</strong> Informatyka</p>
+            <p><strong>Okres:</strong> 2023 – obecnie</p>
+        </section>
+
+    </div>
+
+</main>
+
+<footer class="container">
+    <p>&copy; 2026 Arsen Vdovenko</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
